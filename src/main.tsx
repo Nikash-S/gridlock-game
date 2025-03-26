@@ -1,8 +1,8 @@
 import { Devvit, useState } from '@devvit/public-api';
 
-Devvit.configure({
-  redditAPI: true,
-});
+// Devvit.configure({
+//   redditAPI: true,
+// });
 
 Devvit.addMenuItem({
   label: 'Add my post',

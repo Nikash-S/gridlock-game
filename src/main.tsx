@@ -89,15 +89,15 @@ Devvit.addCustomPostType({
           {grid.map((row, rowIndex) => (
             <hstack key={rowIndex} gap="small">
               {row.map((cell, colIndex) => (
-                <button
-                  key={`${rowIndex}-${colIndex}`}
-                  appearance={cell ? 'primary' : 'secondary'}
-                  width="40px"
-                  height="40px"
-                  onPress={() => !gameOver && setSelectedCell({ row: rowIndex, col: colIndex })}
-                >
-                  {cell || ''}
-                </button>
+              <button
+                key={`${rowIndex}-${colIndex}`}
+                width="40px"
+                height="40px"
+                style={{ backgroundColor: cell || 'white', border: '1px solid black' }}
+                onPress={() => !gameOver && setSelectedCell({ row: rowIndex, col: colIndex })}
+              >
+              </button>
+
               ))}
             </hstack>
           ))}

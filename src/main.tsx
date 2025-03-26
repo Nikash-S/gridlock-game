@@ -55,7 +55,7 @@ Devvit.addCustomPostType({
         return;
       }
       if (!isValidMove(row, col, color)) {
-        setMessage('Invalid move! Cannot use the same color as an adjacent cell.');
+        setMessage('Invalid move! You cannot use the same color as an adjacent cell.');
         return;
       }
       
